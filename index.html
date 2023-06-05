@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+        <div class="hd">
+            <h1>Find Your Body Mass Index Value</h1>
+        </div>
+        <div class="chart">
+            <h3>BMI Chart</h3>
+            <table border = "0" >
+                <tr>
+                <th>BMI Value</th>
+                <th>State</th>
+                </tr>
+                <tr>
+                    <td>19<=bmi <=24</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>24&lt;bmi <=29</td>
+                    <td>Over weight</td>
+                </tr>
+                <tr>
+                    <td>29&lt;bmi <=60</td>
+                    <td>Obese</td>
+                </tr> 
+            </table>
+        </div>
+        <div class="frm" >
+            <form action="">
+                <table border="0">
+                    <tr>
+                        <td>Enter your weight in kilo grammes</td>
+                        <td><input type="text" id="weight"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your height in meter</td>
+                        <td><input type="text" id="height"></td>
+                    </tr>
+
+                </table>
+                <div class="OUT">
+                    <input type="submit" class= "button" name="submit" value="Submit" onclick="findbmi()" >
+                    <input type="reset" class="button" name="reset"  value="Reset">
+                    <p >Your BMI Value is  </p>
+                    <p id="foranswer"></p>
+                    <p id="status"></p>
+                    <img src="" alt="#" id="image" width="200px">
+                </div> 
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
